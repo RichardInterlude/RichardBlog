@@ -1,4 +1,4 @@
-### Blog API
+## Blog API
 
 A scalable RESTful backend for a blogging platform built with Django and Django REST Framework.
 The API provides endpoints for managing blog posts, categories, tags, and comments, enabling developers to build modern content-driven applications.
