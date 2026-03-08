@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/users/login/
+method: POST
+headers:
+  X-CSRFToken: ppSxPK4BWRnudoS2lwoMIw3JVyspsJyv
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: ultraone
+    - type: text
+      key: password
+      value: Olad_789123
+order: 2000

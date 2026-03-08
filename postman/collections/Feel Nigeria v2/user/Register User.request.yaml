@@ -1,0 +1,48 @@
+$kind: http-request
+url: https://feelnigeriatourismexchange.onrender.com/api/user/register/
+method: POST
+headers:
+  - key: X-CSRFTOKEN
+    value: ""
+    disabled: true
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: user11
+      disabled: true
+    - type: text
+      key: email
+      value: facelesstakezo@gmail.com
+    - type: text
+      key: phone
+      value: "09135880254"
+    - type: text
+      key: gender
+      value: male
+    - type: text
+      key: location
+      value: Nigeria
+    - type: text
+      key: motivation
+      value: Testing
+    - type: file
+      key: profile_pix
+      src: /C:/Users/Odewale Richard/Downloads/download (2).jpeg
+    - type: file
+      key: screen_shoot
+      src: /C:/Users/Odewale Richard/Downloads/sc.jpeg
+    - type: text
+      key: agreed_to_terms
+      value: "True"
+    - type: text
+      key: full_name
+      value: Odewale Richard
+    - type: text
+      key: password
+      value: Olad_789123
+    - type: text
+      key: password1
+      value: Olad_789123
+order: 1000

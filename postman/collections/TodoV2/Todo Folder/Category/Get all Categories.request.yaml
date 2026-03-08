@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/todo/categories/
+method: GET
+headers:
+  X-CSRFToken: rgdxznf7BjAXP1xHEfT43p0vvrOPF1V0
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Work
+      disabled: true
+    - type: text
+      key: description
+      value: Swag is unlimited you can choose to swag while you don't
+      disabled: true
+order: 2000

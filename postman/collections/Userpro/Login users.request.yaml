@@ -1,0 +1,13 @@
+$kind: http-request
+url: https://userapp-s69q.onrender.com/api/login/
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: ultrathree
+    - type: text
+      key: password
+      value: Olad_789123
+order: 2000

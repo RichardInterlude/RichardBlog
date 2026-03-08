@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/stores/addtocart/3/
+method: POST
+headers:
+  X-CSRFToken: QAOBi6XMn0kjszYwFmtJjjmZr4alljx0
+order: 1000

@@ -1,0 +1,8 @@
+$kind: http-request
+description: This brings out all the fields in your form for you to review
+url: https://feelnigeriabackend-production.up.railway.app/api/apps/review/1/
+method: GET
+body:
+  type: formdata
+  content: []
+order: 6000

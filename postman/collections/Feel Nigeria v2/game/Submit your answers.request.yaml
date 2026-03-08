@@ -1,0 +1,23 @@
+$kind: http-request
+url: https://feelnigeriatourismexchange.onrender.com/api/game/submit/
+method: POST
+headers:
+  Referer: https://feelnigeriatourismexchange.onrender.com
+  X-CSRFToken: mDyb6uxEUMq8q8g3eRx9RtYNsB5T4TZ8
+queryParams:
+  - key: question
+    value: "1"
+    disabled: true
+  - key: selected_options
+    value: WTF
+    disabled: true
+body:
+  type: formdata
+  content:
+    - type: text
+      key: question
+      value: "1"
+    - type: text
+      key: selected_options
+      value: WTF
+order: 1000

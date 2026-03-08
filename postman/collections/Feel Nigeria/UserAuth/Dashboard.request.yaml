@@ -1,0 +1,10 @@
+$kind: http-request
+description: This field doesnot require any data or id to be inputed, it works
+  with the user logged in it brings out their application status i.e if they
+  have completed their applications
+url: https://feelnigeriabackend-production.up.railway.app/api/user/dashboard/
+method: GET
+body:
+  type: formdata
+  content: []
+order: 5000

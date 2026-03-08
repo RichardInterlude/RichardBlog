@@ -1,0 +1,13 @@
+$kind: http-request
+url: https://feelnigeriabackend-2.onrender.com/api/card/1/submit-account/
+method: POST
+headers:
+  X-CSRFToken: oWgomrjzkCvm2Qu8328DjlnoDSddDVZD
+  Referer: https://feelnigeriabackend-2.onrender.com
+body:
+  type: formdata
+  content:
+    - type: text
+      key: account_number
+      value: "123456789"
+order: 2000

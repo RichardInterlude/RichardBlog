@@ -1,0 +1,13 @@
+$kind: http-request
+url: https://todoapp-bg18.onrender.com/api/todos/
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: bola for president
+    - type: text
+      key: description
+      value: he one of tyhe greats, tapp in
+order: 2000

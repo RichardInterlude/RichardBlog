@@ -1,0 +1,22 @@
+$kind: http-request
+description: This is the last update field.
+url: https://feelnigeriabackend-production.up.railway.app/api/apps/step4/1/
+method: PUT
+headers:
+  X-CSRFToken: 4ajUGu42luqyLkQALLvebdbkICxYIpno
+body:
+  type: formdata
+  content:
+    - type: text
+      key: instagram
+      value: https://www.instagram.com/dummyuser/
+    - type: text
+      key: tiktok
+      value: https://www.tiktok.com/@dummyuser
+    - type: text
+      key: youtube
+      value: https://www.youtube.com/@dummychannel
+    - type: file
+      key: intro_video
+      src: /C:/Users/Odewale Richard/Downloads/Admission fee.pdf
+order: 4000

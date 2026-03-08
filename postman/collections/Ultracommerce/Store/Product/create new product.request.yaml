@@ -1,0 +1,43 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/stores/products/
+method: POST
+headers:
+  X-CSRFToken: QAOBi6XMn0kjszYwFmtJjjmZr4alljx0
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Flared mud cracked denim
+    - type: text
+      key: description
+      value: Break boundaries with this bold pair of flared mud-cracked denim, where
+        raw texture meets runway edge. Featuring a distinctive crackled finish
+        that mimics dried mud, these jeans bring an industrial, distressed
+        energy to any outfit. The flared leg silhouette nods to vintage cuts
+        while keeping things fresh and aggressive.
+    - type: text
+      key: price
+      value: "4000"
+    - type: text
+      key: category
+      value: "2"
+    - type: file
+      key: image
+      src: /C:/Users/Odewale Richard/Downloads/MUD WASH FLARE DENIM - 32.jpeg
+    - type: text
+      key: brand
+      value: dejavu
+    - type: text
+      key: size
+      value: 41-45
+    - type: text
+      key: review
+      value: shit is sxy no cap
+    - type: text
+      key: rating
+      value: "5"
+    - type: text
+      key: is_available
+      value: "True"
+order: 1000

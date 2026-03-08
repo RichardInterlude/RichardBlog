@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://todoapp-bg18.onrender.com/api/todos/
+method: GET
+order: 1000

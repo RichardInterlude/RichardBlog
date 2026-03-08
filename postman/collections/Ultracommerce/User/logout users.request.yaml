@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/users/logout/
+method: POST
+headers:
+  - key: X-CSRFToken
+    value: ""
+    disabled: true
+body:
+  type: formdata
+  content: []
+order: 3000

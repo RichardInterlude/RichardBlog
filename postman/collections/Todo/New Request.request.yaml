@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://todoapp-bg18.onrender.com/api/todo/3/
+method: DELETE
+order: 5000

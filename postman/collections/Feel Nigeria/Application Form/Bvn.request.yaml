@@ -1,0 +1,19 @@
+$kind: http-request
+description: This first checks if a user has a bvn, if the choose False the they
+  should be taken to the premium trust bank api, but if the user has a bvn and
+  inputs it and tries to input another it would send a message that a bvn has
+  been attached to the user. Also it is still conected to the form
+url: https://feelnigeriabackend-production.up.railway.app/api/apps/bvn/1/
+method: PUT
+headers:
+  X-CSRFToken: 4ajUGu42luqyLkQALLvebdbkICxYIpno
+body:
+  type: formdata
+  content:
+    - type: text
+      key: has_bvn
+      value: "True"
+    - type: text
+      key: bvn
+      value: "1234567235"
+order: 5000

@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/todo/tasks/1/
+method: DELETE
+headers:
+  X-CSRFToken: rgdxznf7BjAXP1xHEfT43p0vvrOPF1V0
+order: 6000

@@ -1,0 +1,14 @@
+$kind: http-request
+description: logins in users
+url: https://feelnigeriabackend-production.up.railway.app/api/user/login/
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: ultra29
+    - type: text
+      key: password
+      value: ultra12345
+order: 3000

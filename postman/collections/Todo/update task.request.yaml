@@ -1,0 +1,13 @@
+$kind: http-request
+url: https://todoapp-bg18.onrender.com/api/todo/4/
+method: PUT
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Drink water
+    - type: text
+      key: description
+      value: fghjk,jhgtrfvjki
+order: 4000

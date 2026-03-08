@@ -1,0 +1,31 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/users/register/
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: full_name
+      value: Odewale Temi
+    - type: text
+      key: username
+      value: ultratwo
+    - type: text
+      key: email
+      value: odewalerichard@gmail.com
+    - type: text
+      key: password1
+      value: Olad_789123
+    - type: text
+      key: password2
+      value: Olad_789123
+    - type: text
+      key: phone
+      value: "09135880254"
+    - type: file
+      key: image
+      src: /C:/Users/Odewale Richard/Downloads/@gIorygirl.jpg
+    - type: text
+      key: gender
+      value: M
+order: 1000

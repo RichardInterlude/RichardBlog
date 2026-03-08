@@ -1,0 +1,21 @@
+$kind: http-request
+description: same as the last request, it uses an id to tie to the initail form
+  model, and note its still that same form id from thhe first post request that
+  we use
+url: https://feelnigeriabackend-production.up.railway.app/api/apps/step3/1/
+method: PUT
+headers:
+  X-CSRFToken: 4ajUGu42luqyLkQALLvebdbkICxYIpno
+body:
+  type: formdata
+  content:
+    - type: text
+      key: motivation
+      value: swag purposeses
+    - type: text
+      key: profession
+      value: Creative director
+    - type: text
+      key: hobbies
+      value: reading
+order: 3000

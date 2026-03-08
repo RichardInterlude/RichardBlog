@@ -1,0 +1,7 @@
+$kind: http-request
+description: logs out users, no data is needed to be inputed
+url: https://feelnigeriabackend-production.up.railway.app/api/user/logout/
+method: POST
+headers:
+  X-CSRFToken: lZkSSVfGE96v71GuaVppB9vdfMyjU1Nb
+order: 4000

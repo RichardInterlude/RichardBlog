@@ -1,0 +1,16 @@
+$kind: http-request
+description: After review you can still update your fields during submission.
+  when the user clicks the submit button then is submitted would turn to True
+  the automatically when is_submitted is True then a time is assigned when this
+  request is ran
+url: https://feelnigeriabackend-production.up.railway.app/api/apps/submit/1/
+method: PUT
+headers:
+  X-CSRFToken: 4ajUGu42luqyLkQALLvebdbkICxYIpno
+body:
+  type: formdata
+  content:
+    - type: text
+      key: is_submitted
+      value: "True"
+order: 7000

@@ -1,0 +1,38 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/user/login/
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: odewalerichard@gmail.com
+      disabled: true
+    - type: text
+      key: email
+      value: odewalerichard@gmail.com
+    - type: text
+      key: name
+      value: Richard
+      disabled: true
+    - type: text
+      key: phone_number
+      value: "09135880254"
+      disabled: true
+    - type: text
+      key: gender
+      value: M
+      disabled: true
+    - type: file
+      key: profile_pix
+      src: /C:/Users/USER/Downloads/Grey and Blue Simple Clean Travel Guide Ebook
+        Cover.png
+      disabled: true
+    - type: text
+      key: password
+      value: Olad123
+    - type: text
+      key: confirm_password
+      value: Olad123
+      disabled: true
+order: 2000

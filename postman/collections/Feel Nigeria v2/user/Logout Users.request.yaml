@@ -1,0 +1,16 @@
+$kind: http-request
+url: https://feelnigeriatourismexchange.onrender.com/api/user/logout/
+method: POST
+headers:
+  X-CSRFToken: Hs6MA4Oje4T65VXTK1AcVyZCtcg5dsOn
+  Referer: https://feelnigeriabackend-2.onrender.com/
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: user9
+    - type: text
+      key: password
+      value: Olad_789123
+order: 3000

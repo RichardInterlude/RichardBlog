@@ -1,0 +1,16 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/todo/categories/6/
+method: PUT
+headers:
+  X-CSRFToken: 48od20SNKhZJcNDxZh7T4KFILnn7WPOb
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Nine vI
+    - type: text
+      key: description
+      value: Swag is unlimited you can choose to swag while you don't
+      disabled: true
+order: 4000

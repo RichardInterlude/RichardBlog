@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/stores/categorys/
+method: GET
+headers:
+  X-CSRFToken: QAOBi6XMn0kjszYwFmtJjjmZr4alljx0
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Trift Feinds
+    - type: file
+      key: image
+      src: /C:/Users/Odewale Richard/Downloads/download (1).jpeg
+order: 2000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: https://feelnigeriabackend-2.onrender.com/api/webhook/ptb/otp/
+method: POST
+headers:
+  X-CSRFToken: oWgomrjzkCvm2Qu8328DjlnoDSddDVZD
+  Referer: https://feelnigeriabackend-2.onrender.com
+body:
+  type: formdata
+  content:
+    - type: text
+      key: account_number
+      value: "123456789"
+    - type: text
+      key: status
+      value: otp_verified
+order: 3000

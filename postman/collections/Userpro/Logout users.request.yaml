@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://userapp-s69q.onrender.com/api/logout/
+method: POST
+headers:
+  X-CSRFToken: LiARKVRL1h1gLC5zIpvLvoJSvjN9e8dt
+  Referer: https://userapp-s69q.onrender.com
+body:
+  type: formdata
+  content: []
+order: 3000

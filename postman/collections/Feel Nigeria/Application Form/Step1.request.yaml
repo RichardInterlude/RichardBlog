@@ -1,0 +1,27 @@
+$kind: http-request
+description: This part creates an form in the database but does not put out all
+  the fields out in order to not overwhelm the users, also an id is created
+  which ties other requests to this.
+url: https://feelnigeriabackend-production.up.railway.app/api/apps/step1/
+method: POST
+headers:
+  X-CSRFToken: 4ajUGu42luqyLkQALLvebdbkICxYIpno
+body:
+  type: formdata
+  content:
+    - type: text
+      key: nationality
+      value: Nigeria
+    - type: text
+      key: country_of_residence
+      value: America
+    - type: text
+      key: date_of_birth
+      value: 2023-12-05
+    - type: text
+      key: gender
+      value: M
+    - type: text
+      key: phone
+      value: "09135880254"
+order: 1000

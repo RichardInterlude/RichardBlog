@@ -1,0 +1,34 @@
+$kind: http-request
+url: userapp-s69q.onrender.com/api/register/
+method: POST
+headers:
+  X-CSRFToken: GyRXHu3XImehLvwP5afemYTrlQbKRmrK; Path=/; Expires=Wed, 15 Jul 2026
+    20:37:07 GMT;
+body:
+  type: formdata
+  content:
+    - type: text
+      key: full_name
+      value: Odewale Temi
+    - type: text
+      key: phone
+      value: "09135580254"
+    - type: text
+      key: gender
+      value: M
+    - type: text
+      key: email
+      value: odewalerichard@gmail.com
+    - type: text
+      key: username
+      value: ultrathree
+    - type: text
+      key: password
+      value: Olad_789123
+    - type: text
+      key: password1
+      value: Olad_789123
+    - type: file
+      key: profile_pix
+      src: /C:/Users/Odewale Richard/Downloads/@gIorygirl.jpg
+order: 1000

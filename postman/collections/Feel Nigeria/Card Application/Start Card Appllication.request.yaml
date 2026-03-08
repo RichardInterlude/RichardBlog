@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://feelnigeriabackend-2.onrender.com/api/card/start/
+method: POST
+headers:
+  Referer: https://feelnigeriabackend-2.onrender.com
+  X-CSRFToken: oWgomrjzkCvm2Qu8328DjlnoDSddDVZD
+body:
+  type: formdata
+  content: []
+order: 1000

@@ -1,0 +1,21 @@
+# Use this workspace to collaborate
+workspace:
+  id: 4d915cc2-7f51-4246-8540-72810986a6d0
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+cloudResources:
+  collections:
+    ..\postman\collections\BlogAPI: 37626647-c0e684cb-7c51-4206-a55e-025d9033903f
+    ..\postman\collections\REST API basics- CRUD, test & variable: 37626647-11e12693-892c-439a-b65b-19abb17f11f0
+    ..\postman\collections\Feel Nigeria: 37626647-3804256f-ad0f-49c0-b5f2-b413240efcc7
+    ..\postman\collections\Feel Nigeria v2: 37626647-5e1c1926-9dfd-4358-a99c-15c709943fee
+    ..\postman\collections\Userpro: 37626647-6c98e868-6a78-466a-9652-20ffe16bc9e7
+    ..\postman\collections\Todo: 37626647-986a51d5-9c69-409d-9aa6-158984df3d0f
+    ..\postman\collections\TodoV2: 37626647-c8d0fea9-2816-4d52-9dc3-08959316e2d9
+    ..\postman\collections\Ultracommerce: 37626647-ff5d1bb3-2a37-4c44-b177-75028de3ce20
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

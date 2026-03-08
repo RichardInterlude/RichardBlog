@@ -1,0 +1,35 @@
+$kind: http-request
+description: Registers a new user, sends a verification email to the user.
+url: https://feelnigeriabackend-2.onrender.com/api/user/register/
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: full_name
+      value: Ezekiel
+    - type: text
+      key: username
+      value: ultra29
+    - type: text
+      key: email
+      value: facelesstakezo@gmail.com
+    - type: text
+      key: password
+      value: ultra12345
+    - type: text
+      key: password1
+      value: ultra12345
+    - type: text
+      key: phone
+      value: "09135880254"
+    - type: text
+      key: gender
+      value: Female
+    - type: file
+      key: profile_pix
+      src: /C:/Users/Odewale Richard/Downloads/@theitgirl777 ♡_.jpeg
+    - type: text
+      key: agreed_to_terms
+      value: "True"
+order: 1000

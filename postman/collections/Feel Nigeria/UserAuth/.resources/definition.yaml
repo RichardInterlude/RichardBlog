@@ -1,0 +1,4 @@
+$kind: collection
+description: Authenticate Users, deals with registration, verification, Login,
+  Logout and the dashboard
+order: 1000

@@ -1,0 +1,24 @@
+$kind: http-request
+description: From the already created form model we update some fields that we
+  didnot fill initially as to not overwhelm users. we use the id created from
+  the initial form as to not loose track
+url: https://feelnigeriabackend-production.up.railway.app/api/apps/step2/1/
+method: PUT
+headers:
+  X-CSRFToken: 4ajUGu42luqyLkQALLvebdbkICxYIpno
+body:
+  type: formdata
+  content:
+    - type: text
+      key: passport_number
+      value: "1234565432345"
+    - type: text
+      key: passport_expiration
+      value: 2025-10-23
+    - type: text
+      key: visa_history
+      value: "True"
+    - type: text
+      key: travel_history
+      value: Aint my first time bih
+order: 2000

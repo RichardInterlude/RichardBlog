@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://feelnigeriabackend-2.onrender.com/api/card/1/debit/
+method: POST
+headers:
+  X-CSRFToken: oWgomrjzkCvm2Qu8328DjlnoDSddDVZD
+  Referer: https://feelnigeriabackend-2.onrender.com
+order: 4000

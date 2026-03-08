@@ -1,0 +1,19 @@
+$kind: http-request
+url: https://feelnigeriabackend-2.onrender.com/api/webhook/ptb/debit/
+method: POST
+headers:
+  X-CSRFToken: oWgomrjzkCvm2Qu8328DjlnoDSddDVZD
+  Referer: https://feelnigeriabackend-2.onrender.com
+body:
+  type: formdata
+  content:
+    - type: text
+      key: reference
+      value: FEEL-1F902768A067
+    - type: text
+      key: status
+      value: debit_success
+    - type: text
+      key: pickup_token
+      value: TOKEN-9999
+order: 5000
