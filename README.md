@@ -1,11 +1,11 @@
-## Blog API
+# Blog API
 
 A scalable RESTful backend for a blogging platform built with Django and Django REST Framework.
 The API provides endpoints for managing blog posts, categories, tags, and comments, enabling developers to build modern content-driven applications.
 
 This project demonstrates clean backend architecture, relational database modeling, and structured API design.
 
-# Features
+### Features
 
 Create, update, delete, and retrieve blog posts
 Category-based post organization
@@ -15,16 +15,16 @@ RESTful API endpoints
 Admin dashboard for content management
 Structured and scalable database relationships
 
- ## Tech Stack
+## Tech Stack
 
-# Backend
+### Backend
 Django
 Django REST Framework
 
-# Database
+### Database
 SQLite (development)
 
-# Tools
+### Tools
 Git
 Virtual environments
 
@@ -48,18 +48,18 @@ blog_api/
 └── requirements.txt
 
 ## Installation
-# Clone the repository
+### Clone the repository
 git clone https://github.com/yourusername/blog-api.git
 cd blog-api
 
-# Create a virtual environment
+### Create a virtual environment
 python -m venv venv
 
-# Activate the environment
+### Activate the environment
 Windows
 venv\Scripts\activate
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 Run migrations
 python manage.py migrate
