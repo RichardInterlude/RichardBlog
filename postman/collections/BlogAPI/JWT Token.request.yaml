@@ -1,4 +1,18 @@
 $kind: http-request
-url: ""
-method: GET
-order: 2000
+name: JWT Token
+url: http://127.0.0.1:8000/api/token/
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: richardski
+      description: ""
+      disabled: false
+    - type: text
+      key: password
+      value: Olad_789123
+      description: ""
+      disabled: false
+order: 1015069405086470

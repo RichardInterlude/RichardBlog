@@ -12,7 +12,7 @@ POST_STATUS = (
 class Post(models.Model):
     category = models.ForeignKey('Category', on_delete=models.CASCADE, blank=True, null=True)
     tag = models.ManyToManyField('Tag')
-    author = models.ForeignKey(User, on_delete=models.CASCADE, unique=True)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     content = models.TextField()
     featured_image = models.ImageField(upload_to='featured_images/', blank=True, null=True)

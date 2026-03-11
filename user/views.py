@@ -7,17 +7,19 @@ from rest_framework import status
 
 from django.contrib.auth import login, logout, authenticate
 from django.shortcuts import get_object_or_404
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
 
 class RegisterationView(APIView):
+    permission_classes = [AllowAny]
     def post(self, request):
         try:
             serializers = RegisterationSerializer(data=request.data)
             if serializers.is_valid():
                 serializers.save()
                 return Response(serializers.data, status=status.HTTP_201_CREATED)
+            return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         

@@ -12,7 +12,7 @@ class UserSerializer(serializers.ModelSerializer):
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ['name', 'bio', 'profile_pix', 'phone_number', 'role', 'social_media']
+        fields = ['name', 'bio', 'phone_number', 'role', 'social_media']
 
 class RegisterationSerializer(serializers.ModelSerializer):
     username = serializers.CharField(write_only=True)
@@ -22,7 +22,7 @@ class RegisterationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profile
-        fields = ['username', 'email', 'password', 'password1', 'name', 'bio', 'profile_pix', 'phone_number', 'role', 'social_media']
+        fields = ['username', 'email', 'password', 'password1', 'name', 'bio', 'phone_number', 'role', 'social_media']
 
     def validate(self, data):
         if data['password'] != data['password1']:
@@ -41,7 +41,7 @@ class RegisterationSerializer(serializers.ModelSerializer):
             user=user,
             name=validated_data['name'],
             bio=validated_data['bio'],
-            profile_pix=validated_data['profile_pix'],
+            # profile_pix=validated_data['profile_pix'],
             phone_number=validated_data['phone_number'],
             role=validated_data['role'],
             social_media=validated_data['social_media']
