@@ -8,7 +8,7 @@ class PostSerializers(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class CtaegorySerializers(serializers.ModelSerializer):
+class CategorySerializers(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'
@@ -18,7 +18,7 @@ class TagSerializers(serializers.ModelSerializer):
         model = Tag
         fields = '__all__'
 
-class CommenntSerializers(serializers.ModelSerializer):
+class CommentSerializers(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = '__all__'

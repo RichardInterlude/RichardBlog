@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.signals import pre_save
+from api.utils import unique_slug_generator
 
 
 POST_STATUS = (
@@ -8,32 +10,61 @@ POST_STATUS = (
     ('archived','Archived')
 )
 
+class SlugModel(models.Model):
+    slug = models.SlugField(max_length=255, unique = True , blank=True, null=True)
 
-class Post(models.Model):
+    class Meta:
+        abstract = True
+
+    def save(self,*args, **Kwargs):
+        if not self.slug:
+            self.slug = unique_slug_generator(self)
+        super().save(*args, **Kwargs)
+
+
+class Post(SlugModel):
     category = models.ForeignKey('Category', on_delete=models.CASCADE, blank=True, null=True)
     tag = models.ManyToManyField('Tag')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     content = models.TextField()
-    featured_image = models.ImageField(upload_to='featured_images/', blank=True, null=True)
+    featured_image = models.ImageField(upload_to='featured_images')
     status = models.CharField(max_length=50, choices=POST_STATUS, default='draft')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = unique_slug_generator(self)
+        super().save(*args, **kwargs)
+
     def __str__ (self):
         return self.title
-    
 
-class Category(models.Model):
+class Category(SlugModel):
     name = models.CharField(max_length=255)
     description = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True, blank =True, null=True)
+    updated_at = models.DateTimeField(auto_now=True, blank = True, null=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = unique_slug_generator(self)
+        super().save(*args, **kwargs)
 
     def __str__ (self):
         return self.name
     
 
-class Tag(models.Model):
+class Tag(SlugModel):
     name = models.CharField(max_length=255)
+    description = models.TextField(blank=True, null=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = unique_slug_generator(self)
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.name

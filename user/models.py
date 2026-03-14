@@ -15,7 +15,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.SlugField()
     bio = models.TextField()
-    # profile_pix = models.ImageField(upload_to='profile_pics/', blank = True, null = True)
+    profile_pix = models.ImageField(upload_to='profile_pics',)
     phone_number = models.CharField(max_length=15, unique=True)
     role = models.CharField(max_length=50, choices=CHOICES_ROLE)
     social_media = models.URLField()

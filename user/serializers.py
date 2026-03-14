@@ -12,9 +12,9 @@ class UserSerializer(serializers.ModelSerializer):
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ['name', 'bio', 'phone_number', 'role', 'social_media']
+        fields = ['name', 'bio', 'phone_number', 'role', 'social_media','profile_pix']
 
-class RegisterationSerializer(serializers.ModelSerializer):
+class RegistrationSerializer(serializers.ModelSerializer):
     username = serializers.CharField(write_only=True)
     email = serializers.EmailField(write_only=True)
     password = serializers.CharField(write_only=True)
@@ -22,11 +22,11 @@ class RegisterationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profile
-        fields = ['username', 'email', 'password', 'password1', 'name', 'bio', 'phone_number', 'role', 'social_media']
+        fields = ['username', 'email', 'password', 'password1', 'name', 'bio', 'phone_number', 'role', 'social_media','profile_pix']
 
     def validate(self, data):
         if data['password'] != data['password1']:
-            raise serializers.ValidationError("Passwords do not match. Dont be dumb")
+            raise serializers.ValidationError("Passwords do not match. Don't be dumb")
         return data
     
     def create(self, validated_data):
@@ -41,7 +41,7 @@ class RegisterationSerializer(serializers.ModelSerializer):
             user=user,
             name=validated_data['name'],
             bio=validated_data['bio'],
-            # profile_pix=validated_data['profile_pix'],
+            profile_pix=validated_data.get['profile_pix'],
             phone_number=validated_data['phone_number'],
             role=validated_data['role'],
             social_media=validated_data['social_media']
